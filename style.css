@@ -1,0 +1,102 @@
+/* Générale */
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ajout de cette ligne*/
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img{
+  width: 100%;
+}
+
+h1,h2,h3,p{
+  text-align: center;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: large;
+  padding: 5px 5px;
+}
+
+header #logo {
+  text-align: center;
+}
+
+header #client {
+  text-align: right;
+}
+
+/* Barre de navigation */
+
+nav{
+  background-color: burlywood;
+  padding: 1px 0px;
+  text-align: center;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0px;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+nav ul li{
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
+  color:crimson;
+}
+
+/* Contenu principal */
+
+#sectionCollection{
+  display :grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 400px){
+  #sectionCollection{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px){
+  #sectionCollection{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+section article{
+  margin:5px;
+}
+
+#sectionCollection article img:hover{
+  opacity: 0.8;
+}
+
+#sectionFiabilite{
+  display: flex;
+}
+
+/* Pied de page */
+
+footer i:hover{
+  transform: scale(1.5);
+}
